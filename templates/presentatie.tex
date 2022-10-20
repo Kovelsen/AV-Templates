@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LATEX-TEMPLATE PRESENTATIE
+%-------------------------------------------------------------------------------
+% Voor informatie over presenterenn, zie
+% http://practicumav.nl/presenteren/presenteren.html
+% Voor readme en meest recente versie van het template, zie
+% https://gitlab-fnwi.uva.nl/informatica/LaTeX-template.git
+% Gebaseerd op een template van: http://www.LaTeXTemplates.com
+% Licentie: CC BY-NC-SA 3.0
+% (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES EN CONFIGURATIE
+%-------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169]{uva-inf-presentation}
+\usepackage[dutch]{babel}
+
+\title{Hoe Bak je Lekkere Frietjes}
+\course{Inleiding Frituren}
+\assignment{Naam van het samen te vatten boek}
+\assignmenttype{Samenvatting}
+\authors{Auteur 1; Auteur 2}
+\uvanetids{UvAnetID student 1; UvAnetID student 2}
+\tutor{Naam van de tutor}
+\mentor{}
+\docent{}
+\group{Naam van de groep}
+
+\begin{document}
+
+\begin{titelframe}
+% De eerste slide is de titelpagina
+\titlepage
+\end{titelframe}
+
+\begin{frame}
+% Geeft een inhoudsopgave voor de presentatie
+\frametitle{Inhoudsopgave}
+\tableofcontents
+\end{frame}
+
+%-------------------------------------------------------------------------------
+%	PRESENTATIE SLIDES
+%-------------------------------------------------------------------------------
+
+% Secties zijn er om structuur in je presentatie aan te brengen
+% en worden direct in de inhoudsopgave opgenomen
+\section{Eerste sectie}
+% Maak een subsection voor een serie slides met een gedeeld thema
+\subsection{Voorbeeld subsectie}
+
+\begin{frame}
+\frametitle{Tekst}
+Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id
+lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique.
+Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem
+vulputate fermentum accumsan neque mollis.\\~\\
+
+Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero.
+Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis
+commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis
+arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque
+ultrices lobortis.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Bullet Points}
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
+\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
+\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis
+      porttitor odio mauris at libero
+\item Nam cursus est eget velit posuere pellentesque
+\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Blokken Tekst}
+\begin{block}{Blok 1}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl,
+ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris.
+Sed volutpat ante purus, quis accumsan dolor.
+\end{block}
+
+\begin{block}{Blok 2}
+Pellentesque sed tellus purus. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+Vestibulum quis magna at risus dictum tempor eu vitae velit.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Meerdere Kolommen}
+% De "c" zorgt voor gecentreerde verticale uitlijning
+\begin{columns}[c]
+ verticaal
+
+% Breedte van de linkerkolom
+\column{.45\textwidth}
+\textbf{Koptekst}
+\begin{enumerate}
+\item Stelling
+\item Uitleg
+\item Voorbeeld
+\end{enumerate}
+
+% Breedte van de rechterkolom
+\column{.5\textwidth}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl,
+ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris.
+Sed volutpat ante purus, quis accumsan dolor.
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Tweede sectie}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Tabel}
+\begin{table}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Behandeling} & \textbf{Reactie 1} & \textbf{Reactie 2}\\
+\midrule
+Behandeling 1 & 0.0003262 & 0.562 \\
+Behandeling 2 & 0.0015681 & 0.910 \\
+Behandeling 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{Tabel onderschrift}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Stelling}
+\begin{theorem}[Massa-energierelatie]
+$E = mc^2$
+\end{theorem}
+\end{frame}
+
+%------------------------------------------------
+
+% Gebruik fragile wanneer verbatim wordt gebruikt
+\begin{frame}[fragile]
+\frametitle{Verbatim}
+\begin{example}[Code van de Stelling slide]
+\begin{verbatim}
+\begin{frame}
+\frametitle{Stelling}
+\begin{theorem}[Massa-energierelatie]
+$E = mc^2$
+\end{theorem}
+\end{frame}\end{verbatim}
+\end{example}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Figuur}
+Dit is een voorbeeld van een afbeelding
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{logoUvA_nl}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Conclusie}
+\Large{\centerline{Belangrijkste conclusie}}
+\end{frame}
+\end{document}

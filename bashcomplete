@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This file implements bash auto completion for the uvalatex script. This
+# should be sourced by a interactive bash instance. This can be done by placing
+# this script in /usr/share/bash-completion/completions/ with debian and ubuntu
+#
+#
+# Author: Thomas Schaper
+
+_uvalatex() {
+    local cur prev flags options file
+
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    flags="--template --force --help --link"
+
+    if [[ ${prev} =~ ^(-t|--template)$ ]]; then
+        # /usr/share/uvalatex/templates/ templates is where the templates are
+        # this is also hard coded into uvalatex.sh
+        for file in /usr/share/uvalatex/templates/*.tex; do
+            options="$options$(basename "${file%.*}") "
+        done
+        COMPREPLY+=($(compgen -W "${options}" -- "${cur}"))
+    elif [[ "${cur}" == -* ]]; then
+        COMPREPLY+=($(compgen -W "${flags}" -- "${cur}"))
+    fi
+}
+
+complete -o default -o bashdefault -F _uvalatex uvalatex

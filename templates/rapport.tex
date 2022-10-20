@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LATEX-TEMPLATE TECHNISCH RAPPORT
+%-------------------------------------------------------------------------------
+% Voor informatie over het technisch rapport, zie
+% http://practicumav.nl/onderzoeken/rapport.html
+% Voor readme en meest recente versie van het template, zie
+% https://gitlab-fnwi.uva.nl/informatica/LaTeX-template.git
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES EN DOCUMENT CONFIGURATIE
+%-------------------------------------------------------------------------------
+
+\documentclass{uva-inf-article}
+\usepackage[dutch]{babel}
+
+% Relevant voor refereren vanaf blok 5
+%\usepackage[style=authoryear-comp]{biblatex}
+%\addbibresource{bib}
+
+%-------------------------------------------------------------------------------
+%	GEGEVENS VOOR IN DE TITEL
+%-------------------------------------------------------------------------------
+
+% Vul de naam van de opdracht in.
+\assignment{Naam van het samen te vatten boek}
+% Vul het soort opdracht in.
+\assignmenttype{Rapport}
+% Vul de titel van de eindopdracht in.
+\title{Titel van het document}
+
+% Vul de volledige namen van alle auteurs in.
+\authors{Auteur 1; Auteur 2}
+% Vul de corresponderende UvAnetID's in.
+\uvanetids{UvAnetID student 1; UvAnetID student 2}
+
+% Vul altijd de naam in van diegene die het nakijkt, tutor of docent.
+\tutor{Naam van de tutor}
+% Vul eventueel ook de naam van de docent of vakcoordinator toe.
+\docent{}
+% Vul hier de naam van de groep  in.
+\group{Naam van de groep}
+% Vul de naam van de cursus in.
+\course{Naam van de (gekoppelde) cursus}
+% Te vinden op onder andere Datanose.
+\courseid{}
+
+% Dit is de datum die op het document komt te staan. Standaard is dat vandaag.
+\date{\today}
+
+%-------------------------------------------------------------------------------
+%	VOORPAGINA
+%-------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+
+%-------------------------------------------------------------------------------
+%	INHOUDSOPGAVE EN ABSTRACT
+%-------------------------------------------------------------------------------
+
+% Niet doen bij korte verslagen en rapporten
+%\tableofcontents
+%\begin{abstract}
+%\lipsum[13]
+%\end{abstract}
+
+%-------------------------------------------------------------------------------
+%	INTRODUCTIE
+%-------------------------------------------------------------------------------
+
+\section{Introductie}
+\lipsum[1]
+
+\subsection{Definities}
+\lipsum[2]
+
+\subsection{Vraagstelling}
+\lipsum[3]
+
+%-------------------------------------------------------------------------------
+%	METHODE
+%-------------------------------------------------------------------------------
+
+\section{Methode}
+\lipsum[3]
+\subsection{Algoritme}
+\subsection{Diagram}
+\subsection{Procedure}
+\subsection{Software en apparatuur}
+
+%-------------------------------------------------------------------------------
+%	RESULTATEN
+%-------------------------------------------------------------------------------
+
+\section{Resultaten}
+\lipsum[4]
+
+%-------------------------------------------------------------------------------
+%	DISCUSSIE
+%-------------------------------------------------------------------------------
+
+\section{Discussie}
+\lipsum[5]
+
+\subsection{Implicaties en aanbevelingen}
+\lipsum[6]
+
+\subsection{Conclusie}
+\lipsum[7]
+
+%-------------------------------------------------------------------------------
+%	REFERENTIES
+%-------------------------------------------------------------------------------
+
+%\printbibliography
+
+%-------------------------------------------------------------------------------
+%	BIJLAGEN EN EINDE
+%-------------------------------------------------------------------------------
+
+%\section{Bijlage A}
+%\section{Bijlage B}
+%\section{Bijlage C}
+\end{document}
