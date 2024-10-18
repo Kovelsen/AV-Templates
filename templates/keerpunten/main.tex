@@ -1,1 +1,82 @@
+%-------------------------------------------------------------------------------
+% LATEX TEMPLATE ARTIKEL
+%-------------------------------------------------------------------------------
+% Dit template is voor gebruik door studenten van de de bacheloropleiding 
+% Informatica aan de Universiteit van Amsterdam, specifiek voor de
+% voorbereidende rapporten van het vak Keerpunten in de Informatiewetenschappen.
+%
+% Dit template is gebaseerd op 'UvA Informatica Template Artikel'.
+%
+% Voor informatie over schrijfvaardigheden en refereren, zie 
+%                               https://practicumav.datanose.nl/schrijven/index.html.
+%
+%-------------------------------------------------------------------------------
+%	PACKAGES EN DOCUMENT CONFIGURATIE
+%-------------------------------------------------------------------------------
 
+\documentclass{uva-inf-article}
+\usepackage[dutch]{babel}
+
+\usepackage[style=authoryear-comp]{biblatex}
+\addbibresource{references.bib}
+
+%-------------------------------------------------------------------------------
+%	GEGEVENS VOOR IN DE TITEL, HEADER EN FOOTER
+%-------------------------------------------------------------------------------
+
+% Geef je artikel een logische titel die de inhoud dekt.
+\title{Titel van het document}
+
+\assignment{Voorbereidende Rapport [nummer]}
+\assignmenttype{Voorbereidende Rapporten}
+
+% Noteer je naam en UvAnetID.
+\authors{Auteur}
+\uvanetids{UvAnetID}
+
+% Vul de naam van je werkcollegebeleider in.
+\ta{Naam van je werkcollegebegeleider}
+
+% Vul hier de naam van je werkcollegegroep in.
+\group{Naam van je werkcollegegroep}
+
+% Check bij een eerste gebruik of de naam en de vakcode actueel zijn (via DataNose).
+\course{Keerpunten in de Informatiewetenschappen}
+\courseid{5061KEII6Y}
+
+% Dit is de datum die op het document komt te staan. Standaard is dat vandaag.
+% Heb je dat liever niet, dan schrijf je \date{datum}.
+\date{\today}
+
+%-------------------------------------------------------------------------------
+%	VOORPAGINA 
+%-------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\newpage
+
+%-------------------------------------------------------------------------------
+%	INHOUD
+%-------------------------------------------------------------------------------
+% Het is je eigen keus of je sections (en verdere subsections) gebruikt in je
+% verslag.
+
+\section{Introductie}
+
+\lipsum[1][1-3]  
+Deze alinea eindigt met een referentie \parencite{vanwijk21}.
+
+\lipsum[2-3]
+
+%-------------------------------------------------------------------------------
+%	REFERENTIES
+%-------------------------------------------------------------------------------
+
+% Referenties plaats je in 'references.bib'. Volg hiervoor de instructies op
+% Canvas en https://practicumav.nl/schrijven/refereren.html.
+\newpage
+\printbibliography
+
+%-------------------------------------------------------------------------------
+\end{document}
