@@ -5,7 +5,7 @@ bacheloropleiding informatica van de UvA gebruikt worden.
 Met de overstap naar Overleaf wordt deze *repository* minder vlot bijgehouden. Zie de meest recente versies van de *templates*
 op Overleaf: <https://www.overleaf.com/edu/uva#templates>
 
-Dit template blijft wel in gebruik voor het oefenen van git clone tijdens de AVI lessen!
+Dit template blijft wel in gebruik voor het oefenen van *git clone* tijdens de AVI lessen!
 
 ## Bestanden
 Naast deze README zijn er diverse bestanden in de *repository* te vinden.
