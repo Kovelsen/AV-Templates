@@ -22,6 +22,7 @@ documenten:
 * Literatuuronderzoek
 * Bachelorthesis
 * Generiek
+* keerpunten (voorbereidende rapporten)
 
 Dit laatste bestand is bruikbaar voor alle overige opdrachten. Daarnaast is er  
 een sjabloon voor de thesis met een eigen `cls`-bestand.
